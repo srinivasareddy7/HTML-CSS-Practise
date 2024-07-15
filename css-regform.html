@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regform</title>
+    <style>
+        .A{
+            background: linear-gradient(blueviolet,Deeppink);
+            color: beige;
+            width: 180px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2{
+            text-align: center;
+            font-size:20px;
+
+        }
+     label
+        {display: block;
+            margin:02px; 
+        }
+        .B{
+            font-size: 20px;
+            height:100x;
+            border:none;
+            width: 180px;
+        }
+        .S{
+         margin:20px;
+         margin-right: 50px;  
+         background: linear-gradient(blueviolet,deeppink); 
+         width:150px;
+         padding:5px 10px;
+         font-size: 20px;
+         text-align: center;
+         color: whitesmoke;
+         border: none;
+         box-shadow: o 5px 10px black;
+        }
+        input[type=Email]
+        {
+            background-color: gray;
+            color: red;
+        }
+        input[type=Email]:focus
+        {
+            background-color: aqua;
+            color:yellowgreen;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="A">
+        <i class="fa fa-user-circle"></i>
+        <h2>REGISTER FORM</h2>
+     <form class="F">
+        <div class="B">
+            <label>User Name</label>
+            <input type="text">
+        </div>
+        <div class="B">
+            <label>Email</label>
+            <input type="Email">
+        </div>
+        <div class="B">
+            <label>password</label>
+            <input type="password">
+        </div>
+        <div class="B">
+            <label>Designation</label>
+        </div>
+        <select>
+            <option value="">select Designation</option>
+            <option value="">Devloper</option>
+            <option value="">Data Associate</option>
+            <option value="">Admin</option>
+            <option value="">Support</option>
+            <option value="">Data Engineer</option>
+        </select>
+        <div class="S">
+            <input type="submit" value="REGISTER">
+        </div>
+     </form>
+    </div>
+    
+</body>
+</html>

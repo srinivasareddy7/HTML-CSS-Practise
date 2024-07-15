@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOORS OPEN</title>
+    <style>
+        .A{
+            border: 10px solid saddlebrown;
+            height: 420px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0 10px 10px black;
+            overflow: hidden;
+            position: relative;
+
+        }
+          .A img{
+            height: inherit;
+            width: inherit;
+            transition: 0.5s all;
+        }
+        .A:hover img{
+        transform: scale(1.2,1.2);
+        }
+        .L{
+            background-image:url("images/leftone.jpg") ;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            transform: perspective(400px) rotatey(0deg);
+            transform-origin: left;
+            transition: all 0.8s;
+        }
+         .A:hover .L{
+            transform: perspective(400px) rotatey(90deg);
+         }
+         .R{
+            background-image: url(images/rightone.jpg);
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            transform: perspective(400px) rotatey(0deg);
+            transform-origin: right;
+            transition: all 0,8s;
+         }
+         .A:hover .R{
+            transform: perspective(400px)rotatey(-90deg);
+         }
+    </style>
+</head>
+<body>
+    <div class="A">
+    <img src="images/venkateswara.jpg" alt="">
+    <div class="L"></div>
+    <div class="R"></div>
+    </div>
+    
+</body>
+</html>

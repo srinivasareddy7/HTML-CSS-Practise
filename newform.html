@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Form</title>
+    <style>
+        div{
+            background:linear-gradient(blueviolet,pink);
+            width: 200px;
+            padding: 10px;
+            margin: 50px;
+        }
+        h2{
+            background-color: gray;
+            color:greenyellow;
+        }
+        input[type=data]
+        {
+            background-color:white;
+            color: black;
+            padding: 05px;
+        }
+        input[type=data]:focus
+        {
+            background-color:lawngreen;
+        }
+        input[type=text]
+        {
+            background-color: aquamarine;
+            padding: 5px;
+        }
+        input[type=digits]
+        {
+            background-color:greenyellow;
+            padding:5px;
+        }
+        input[type=digit]
+        {
+            background-color: palegreen;
+            padding:5px;
+        }
+        input[type=submit]
+        {
+            background-color:lightblue;
+            padding: 5px;
+            width: 100px;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            background-color:pink;
+            border: 10px dotted greenyellow ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="logo2.png">
+        <h2>ACCESS LOGIN</h2>
+        <form>
+            <label>NUMBER/NAME</label>
+            <input type="data">
+            <br>
+            <label>ACEESS ID</label>
+            <input type="text">
+            <br>
+            <label>PASSCODE</label>
+            <input type="digits">
+            <br>
+            <label>CONFIRM PASSCODE</label>
+            <input type="digit">
+            <br>
+            <br>
+            <input type="submit" value=verify>
+        </form>
+    </div>
+    
+</body>
+</html>

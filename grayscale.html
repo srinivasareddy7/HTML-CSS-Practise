@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gray scale</title>
+    <style>
+        body{
+            background:linear-gradient(blueviolet,deeppink);
+        }
+        .A{
+            border:10px dotted greenyellow;
+            height: 400px;
+            width: 400px;
+            margin:auto;
+            padding: 02px;
+            background:linear-gradient(blueviolet,pink);
+            overflow: hidden;
+        }
+        .A img{
+            width: inherit;
+            height: inherit;
+            border-radius: 10px;
+            transition: all 0.5s;
+            filter: A(100%);
+        }
+        .A:hover img{
+            transform: scale(1.2,1.2);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="A">
+        <img src="logo.png"alt="">
+    </div>
+</body>
+</html>

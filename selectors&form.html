@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+       input[type="text"]
+       {
+        background-color:blueviolet;
+       }
+         input[type="text"]:focus
+         {
+            background-color:pink;
+        color:red;
+         }
+       input[type="numbers"]
+       {
+        background-color: limegreen;
+        color:yellow;
+       }
+       input[type="submit"]
+       {
+        background-color:orangered;
+       }
+       input
+       {
+        margin-left:50px;
+        height: 30px;
+        width: 200px;
+       }
+       .A{
+         background-color:limegreen;
+         text-align: center;
+         padding:20px;
+         width: 1000px;
+         border: 50px dotted pink;
+       }
+    </style>
+</head>
+<body>
+ <form>
+    <label>user name</label>
+    <input type="text">
+    <br>
+    <br>
+    <label>password</label>
+    <input type="numbers">
+    <br>
+    <br>
+    <input type="submit">
+ </form>
+ <h1>border all sides</h1>
+ <div class="A">
+   <h1> border all the sides</h1>
+ </div>
+
+    
+</body>
+</html>
